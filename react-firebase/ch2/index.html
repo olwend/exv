@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<title>Exiva</title>
+</head>
+<body>
+    <h1>exiva</h1>
+    <div id="banner">
+        
+    </div>
+    <footer>
+        <p>footer</p>
+    </footer>
+
+    <script type="text/babel"> 
+        const Banner = () => {
+            const title = "Welcome to carbon offsets"
+            const subtitle = "T'is a website for React learning"
+
+            // const handleClick = (e) => {
+            //     console.log('You clicked button')
+            //     console.log('the site title is:',  title)
+            //     console.log(e)
+            // }
+            return (
+                // this is a comment
+                <div className="banner">
+                    <h2>{title.toUpperCase()}</h2>
+                    <p>{subtitle}</p>
+                    <button onClick={(e) => console.log(e)}> Click me</button>     
+                </div>               
+            )
+        }
+        //Render  component
+        ReactDOM.render(<Banner />, document.getElementById('banner'))
+    </script>
+</body>
+</html>
